@@ -1,7 +1,7 @@
 {
     "name": "PROFESSOR-BOT",
     "description": "This Bot Will Help You To Store Files In Cloud Storage. You Can Add Files To The Bot By Forward the last file from a public channel to your bot and Press Yes Button.. If The Files Channl Is Private Make the bot admin on the channel and forward the last file to bot. Then Add the bot to you group and send the movie name The Bot Will Give the file in Bot PM..✮✮",
-    "logo": "https://telegra.ph/file/2e2a07e86066538ed7406.jpg",
+    "logo": "https://telegra.ph/file/0e90c3010d11757e79794.jpg",
     "stack": "container",
     "keywords": [
       "telegram",
@@ -16,8 +16,7 @@
       "index",
       "inline"
     ],
-    "website": "https://github.com/MrMKN/PROFESSOR-BOT",
-    "repository": "https://github.com/MrMKN/PROFESSOR-BOT",
+    "repository": "https://github.com/professorhost/MSM-NEW-FILTER",
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token.",
@@ -63,7 +62,9 @@
         },
         "CUSTOM_FILE_CAPTION": {
             "description": "A custom file caption for your files. formatable with , file_name, file_caption, file_size, Read Readme.md for better understanding.",
-            "value": "{file_name}\n\n🔘 size - {file_size}\n\n╔═════ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ════╗\n💥 𝙅𝙊𝙄𝙉 :- @Mr_Movies_Main\n💥 𝙅𝙊𝙄𝙉 :- @mknmovies\n╚═════ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ════╝ ",
+            "value": "{file_name}
+
+Uploaded by : @msmOTT",
             "required": false
         },
         "DATABASE_URI": {
@@ -82,7 +83,7 @@
         },
         "SUPPORT_CHAT": {
             "description": "Updated Channel Username Without @ Not Chanel ID",
-            "value": "MKN_BOTZ_DISCUSSION_GROUP",
+            "value": "MSMchat",
             "required": false
         },
         "IMDB": {
@@ -92,9 +93,15 @@
         },
         "IMDB_TEMPLATE": {
             "description": "Custom IMDB Template",
-            "value": "<b>🏷 Title</b>: <a href={url}>{title}</a>\n<b>🎭 Genres</b>: {genres}\n<b>📆 Year</b>: <a href={url}/releaseinfo>{year}</a>\n<b>🌟 Rating</b>: <a href={url}/ratings>{rating}</a>\n<b>☀️ Languages</b> : <code>{languages}</code>\n<b>👨‍💼 Dɪʀᴇᴄᴛᴏʀ</b>: {director}\n<b>👨🏻‍🦱 Pʀᴏᴅᴜᴄᴇʀ</b>: {producer}\n<b>📑 wʀɪᴛᴇʀ</b>: {writer}\n<b>📀 RunTime</b>: {runtime} Minutes\n<b>📆 Release Info</b> : {release_date}\n<b>🎛 Countries</b> : <code>{countries}</code>\n<b>📓 Sᴛᴏʀy</b> : <code>{plot}</code>\n\n\n<b>🍀Requested by🍀</b> : {message.from_user.mention}",        
+            "value": "<i><b>🏷 Title</b><i>: <i><b><a href={url}>{title}</a></b></i>
+<i><b>📆 Year</b></i>: <i><b><a href={url}/releaseinfo>{year}</b><i>
+<i><b>🎭 Genres</b></i>: <i><b>{genres}</b></i>
+<i><b>⭐️ Rating</b></i>: <i><b><a href={url}/ratings>{rating}</a></b></i>
+<i><b>🔉 Languages</b></i> : <i><b>#{languages}</b></i>
+
+<i><b>📓 Sᴛᴏʀy Line</b></i> : <i><b>{plot}</b></i>",
             "required": false
-        }, 
+        },
         "IMDB_DELET_TIME": {
             "description": "bot risult aouto delet time in second do to avoid group copyright issue. default is 300 ",
             "value": "300",
